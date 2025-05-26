@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwatch Clock</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="timezone-row">
+        <div class="timezone-block" id="tz-hanoi">
+            <div class="timezone-time" id="time-hanoi"></div>
+            <div class="timezone-label">Hanoi, Vietnam</div>
+        </div>
+        <div class="timezone-block" id="tz-surabaya">
+            <div class="timezone-time" id="time-surabaya"></div>
+            <div class="timezone-label">Surabaya, Indonesia</div>
+        </div>
+        <div class="timezone-block" id="tz-london">
+            <div class="timezone-time" id="time-london"></div>
+            <div class="timezone-label">London, UK</div>
+        </div>
+        <div class="timezone-block" id="tz-ny">
+            <div class="timezone-time" id="time-ny"></div>
+            <div class="timezone-label">New York, USA</div>
+        </div>
+    </div>
+    <div class="watch-wrapper">
+        <div class="watch">
+            <div class="watch-face">
+                <div class="hand hour-hand" id="hour-hand"></div>
+                <div class="hand minute-hand" id="minute-hand"></div>
+                <div class="hand second-hand" id="second-hand"></div>
+                <div class="center-circle"></div>
+            </div>
+        </div>
+        <div class="digital-clock" id="digital-clock"></div>
+    </div>
+    <script src="scripts/clock.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    background: #000; /* Black background */
+}
+
+.watch-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.watch {
+    margin-bottom: 24px;
+}
+
+.watch-face {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    background: #727272; /* Greyish inner background */
+    box-shadow:
+        0 0 40px 10px #fff, /* Glowing white border */
+        0 0 20px rgba(255,255,255,0.2) inset;
+}
+
+.hand {
+    position: absolute;
+    width: 50%;
+    height: 6px;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 50%;
+    transform: rotate(90deg);
+    transition: all 0.05s cubic-bezier(0.4, 2.3, 0.3, 1);
+}
+
+.hour-hand {
+    height: 8px;
+    background: #eee;
+    width: 30%;
+}
+
+.minute-hand {
+    height: 6px;
+    background: #ccc;
+    width: 40%;
+}
+
+.second-hand {
+    height: 2px;
+    background: #ff4081;
+    width: 45%;
+}
+
+.center-circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px 2px #fff;
+}
+
+.digital-clock {
+    margin-top: 0;
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff4081;
+}
+
+/* Add at the end of your CSS file */
+
+.timezone-row {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 3px;
+    margin-top: 32px;
+}
+
+.timezone-block {
+    background: #222;
+    border-radius: 12px;
+    padding: 16px 24px;
+    box-shadow: 0 0 10px #fff2, 0 0 4px #ff4081;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 140px;
+}
+
+.timezone-time {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 4px;
+    text-shadow: 0 0 8px #fff, 0 0 16px #ff4081;
+}
+
+.timezone-label {
+    color: #ff4081;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
